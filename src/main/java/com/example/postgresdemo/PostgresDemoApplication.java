@@ -14,11 +14,5 @@ public class PostgresDemoApplication {
         SpringApplication.run(PostgresDemoApplication.class, args);
     }
 
-    @GetMapping("/get")
-    public @ResponseBody
-    ResponseEntity<String> get() {
-        return new ResponseEntity<String>("GET Response", HttpStatus.OK);
-    }
-
 
 }
